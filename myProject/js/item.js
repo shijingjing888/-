@@ -4,7 +4,7 @@ $.ajax({
 				var str="";
 				for(var i=0;i<res.length;i++){
 					str+=`<li>
-						<a href="product.html"><img src="${res[i].src}"></a>
+						<a href="list.html"><img src="${res[i].src}"></a>
 					</li>`;
 				}
 				$(".item").children("ul").html(str);
@@ -17,7 +17,7 @@ $.ajax({
 				var str="";
 				for(var i=0;i<res.length;i++){
 					str+=`<li>
-						<a href="product.html"><img src="${res[i].src}"></a>
+						<a href="list.html"><img src="${res[i].src}"></a>
 					</li>`;
 				}
 				$(".brand").children("ul").html(str);
@@ -33,7 +33,7 @@ $.ajax({
 						<img src="${res[i].src}">
 						<p>${res[i].dir}</p>
 						<span>${res[i].pri}</span>
-						<em>添加购物车</em>
+						<a href="cars.html"><em>添加购物车</em></a>
 					</div>`;
 				}
 				$(".dire").html(str);
