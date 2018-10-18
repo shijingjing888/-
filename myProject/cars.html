@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>cars</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont-login/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cars.css"/>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="layout">
+				<img src="images-login/logo_e.png" class="logo"/>
+				<ul class="right">
+					<li><a href="reg.html">Hi~YOHO-4360f... [退出]</a></li>
+					<li class="MY"><span class="iconfont">&#xe60c;</span>
+						<a href="#"> MY有货 </a>
+					</li>
+					<li><a href="#">订单中心</a></li>
+					<li><span class="iconfont">&#xe60c;</span>
+						<a href="#">客户服务</a>
+					</li>
+					<li>
+						<p><a href="#">我的收藏</a></p>
+						<p><a href="#">优惠券</a></p>
+					</li>
+					<li>
+						<div><a href="#">在线客服</a></div>
+						<div><a href="#">帮助中心</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="car layout">
+			<div class="order-title">
+				<p><img src="images/yoho_41.jpg"/>我的购物车</p>
+				<ul class="shoping-step">
+					<li>查看购物车</li>
+					<li>填写订单</li>
+					<li>付款，完成购买</li>
+				</ul>
+			</div>
+			<div class="shop-wrapper">
+				<div class="shop-title">
+					<p>全选</p>
+					<p>商品信息</p>
+					<p>单价</p>
+					<p>数量</p>
+					<p>小计</p>
+					<p>操作</p>
+				</div>
+			</div>
+			<table border="1" cellspacing="0" width="990" align="center" class="shop-car">
+			<thead>
+				<tr>
+					<th></th>
+					<th width="100">商品图片</th>
+					<th>名字</th>
+					<th>价格</th>
+					<th width="120">数量</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<thead>
+				<tr>
+					<td colspan="2"><input type="checkbox" name="" id="" value="" />全部选中</td>
+					<td align="right">总价：</td>
+					<td>3344</td>
+					<td>总数量：10</td>
+					<td><em>全部删除</em></td>
+					
+				</tr>
+			</thead>
+			</table>
+		</div>
+	</body>
+	<script src="js/login.js"></script>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		class Cart{
+			constructor(options){
+				this.url = options.url;
+				this.body = options.tbody;
+				
+				this.load()
+			}
+			load(){
+				var that = this;
+				$.ajax({
+					url:this.url,
+					success:function(res){
+						that.res = res
+						that.getCookie()
+					}
+				})
+			}
+			getCookie(){
+				this.goods = JSON.parse($.cookie("goods"))
+				this.display()
+			}
+			display(){
+				var str = ""
+				for(var i=0;i<this.res.length;i++){
+					for(var j=0;j<this.goods.length;j++){
+						if(this.res[i].goodsId === this.goods[j].id){
+							str += `<tr>
+										<td><input type="checkbox"></td>
+										<td><img src="${this.res[i].src}"/></td>
+										<td>${this.res[i].name}</td>
+										<td>${this.res[i].price}</td>
+										<td>${this.goods[j].num}</td>
+										<td><em data-index="${this.res[i].goodsId}">删除</em></td>
+									</tr>`
+						}
+					}
+				}
+				this.body.html(str)
+				this.remove()
+			}
+			remove(){
+				var that = this;
+				this.body.on("click","em",function(){
+					var id = $(this).attr("data-index")
+//					删除DOM
+					$(this).parent().parent().remove()
+//					删除cookie
+					that.removeCookie(id)
+				})
+			}
+			removeCookie(id){
+				for(var i=0;i<this.goods.length;i++){
+					if(this.goods[i].id == id){
+//						注意:此处删除的数组,是获取出来的cookie的值,并没有真正操作到cookie
+						this.goods.splice(i,1)
+					}
+				}
+//				此处重新设置cookie,相当于用操作之后的数组,覆盖原cookie,这才是删除cookie
+				$.cookie("goods",JSON.stringify(this.goods))
+			}
+		}
+		
+		
+		new Cart({
+			url:"http://localhost/myProject/data/goods.json",
+			tbody:$("tbody")
+		})
+</html>

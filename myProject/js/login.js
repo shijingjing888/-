@@ -1,0 +1,37 @@
+$(".MY").hover(function(){
+	$(".MY").css({background:"#ccc"});
+	$(".header").find(".right").find("p").stop().show().css({display:"block",background:"#ccc"});
+},function(){
+	$(".header").find(".right").find("p").stop().slideUp().css({background:"none"});
+	$(".MY").css({background:"none"});
+});
+$(".header").find(".right").find("li").eq(3).hover(function(){
+	$(".header").find(".right").find("li").eq(3).css({background:"#ccc"});
+	$(".header").find(".right").find("div").stop().show().css({display:"block",background:"#ccc"});
+},function(){
+	$(".header").find(".right").find("div").stop().slideUp().css({background:"none"});
+	$(".header").find(".right").find("li").eq(3).css({background:"none"});
+});
+
+$(".saoma").find("img").eq(0).on("click",function(){
+	$(".saoma").css({display:"none"});
+	$(".denglu").css({display:"block"});
+})
+$(".denglu").find("img").eq(0).on("click",function(){
+	$(".denglu").css({display:"none"});
+	$(".saoma").css({display:"block"});
+})
+$(".denglu").find("button").eq(1).on("click",function(){
+	$(".denglu").find(".phone").css({display:"block"});
+	$(".denglu").find(".user").css({display:"none"});
+	$(".denglu").find(".submit").css({marginTop:"150px"});
+	$(".denglu").find("button").eq(1).css({background:"#000",color:"#fff"})
+	$(".denglu").find("button").eq(0).css({background:"#ccc",color:"#000"})
+})
+$(".denglu").find("button").eq(0).on("click",function(){
+	$(".denglu").find(".phone").css({display:"none"});
+	$(".denglu").find(".user").css({display:"block"});
+	$(".denglu").find(".submit").css({marginTop:"0px"});
+	$(".denglu").find("button").eq(0).css({background:"#000",color:"#fff"})
+	$(".denglu").find("button").eq(1).css({background:"#ccc",color:"#000"})
+})

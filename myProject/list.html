@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>list</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont-login/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/pagination.css"/>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="intro">
+			<div class="layout">
+				<div class="left"><img src="images/yoho_19.jpg"/>YOHO!BUY 有货
+					<ul>
+						<li><a href="#">YOHO!</a></li>
+						<li><a href="#">YOHO!BOYS</a></li>
+						<li><a href="#">YOHO!GRILS</a></li>
+						<li><a href="#">Mars</a></li>
+						<li><a href="#">YO'HOOD</a></li>
+					</ul>
+				</div>
+				<p class="center"><img src="images/yoho_03.jpg"/>关于防诈骗的重要提醒</p>
+				<ul class="right">
+					<li><a href="#">HI~</a><a href="login.html">[请登录]</a><a href="reg.html">[免费注册]</a></li>
+					<li class="MY"><a href="#">MY有货</a><img src="images/yoho_25.jpg"/></li>
+					<li><img src="images/yoho_05.jpg"/><a href="#">我的订单</a></li>
+					<li><img src="images/yoho_07.jpg"/><a href="#">我的收藏</a></li>
+					<li><img src="images/yoho_16.jpg"/><a href="#">消息</a></li>
+					<li><img src="images/yoho_09.jpg"/><a href="#">客户服务</a>
+						<p><a href="#">在线客服</a></p>
+						<p><a href="#">帮助中心</a></p>
+					</li>
+					<li><img src="images/yoho_11.jpg"/><a href="#">关注有货</a></li>
+					<li><img src="images/yoho_13.jpg"/><a href="#">手机版</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header">
+			<div class="layout">
+				<ul class="list">
+					<li><a href="#" class="active">男生</a></li>
+					<li><a href="#">女生</a></li>
+					<li><a href="#">潮童</a></li>
+					<li><a href="#">创意生活</a></li>
+				</ul>
+				<div class="logo"><img src="images/yoho_38.jpg"/></div>
+				<div class="search">
+					<input type="text" placeholder="VANS JAPAN LINE发售"/>
+					<button><img src="images/yoho_44.jpg"/></button>
+					<img src="images/yoho_41.jpg"/>
+					<p>
+						<a href="#">Onistuka Tiger</a>
+						<a href="#">converse</a>
+						<a href="#">卫衣</a>
+						<a href="#">MADNESS</a>
+					</p>
+				</div>
+			</div>
+			<ul class="nav">
+				<div class="layout">
+					<li><a href="#">新品到着</a></li>
+					<li><a href="#">品牌一览</a></li>
+					<li><a href="#" id="fushi">服饰</a></li>
+					<li><a href="#" id="xie">鞋履</a></li>
+					<li><a href="#" id="bag">包袋</a></li>
+					<li><a href="#" id="peishi">配饰.其它</a></li>
+					<li><a href="#">逛</a></li>
+					<li><a href="#">SALE</a></li>
+					<div class="yifu">
+						<ul>
+							<li><a href="#" class="yifu-border">上装</a></li>
+							<li><a href="#" class="yifu-color">T恤</a></li>
+							<li><a href="#" class="yifu-color">衬衫</a></li>
+							<li><a href="#">POLO衫</a></li>
+							<li><a href="#">卫衣</a></li>
+							<li><a href="#">夹克</a></li>
+							<li><a href="#">防风外套</a></li>
+							<li><a href="#" class="yifu-border">下装</a></li>
+							<li><a href="#" class="yifu-color">休闲裤</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">牛仔裤</a></li>
+							<li><a href="#" class="yifu-color">短裤</a></li>
+							<li><a href="#">运动裤</a></li>
+							<li><a href="#" class="yifu-border">热门品牌</a></li>
+							<li><a href="#" class="yifu-color">ABLE JEANS</a></li>
+							<li><a href="#" class="yifu-color">Dickies</a></li>
+							<li><a href="#" class="yifu-color">MADNESS</a></li>
+							<li><a href="#">HIPANDA</a></li>
+							<li><a href="#">THETHING</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">RIPNDIP</a></li>
+							<li><a href="#">DUSTY</a></li>
+							<li><a href="#">Red Charcoal</a></li>
+							<li><a href="#">AKOP</a></li>
+							<li><a href="#" class="yifu-color">古由卡/Guuka</a></li>
+							<li><a href="#">PSO BRAND</a></li>
+							<li><a href="#">Life•After Life</a></li>
+							<li><a href="#">COKEIN</a></li>
+							<li><a href="#"><img src="images/hover.JPG" style="width:300px"/></a></li>
+							<li><a href="#">IN季新品全面开售</a></li>
+						</ul>
+					</div>
+					<div class="xie">
+						<ul>
+							<li><a href="#" class="xiezi-border">鞋履</a></li>
+							<li><a href="#" class="xiezi-color">休闲/运动鞋</a></li>
+							<li><a href="#" class="xiezi-color">靴子</a></li>
+							<li><a href="#">时装鞋</a></li>
+							<li><a href="#">凉鞋/拖鞋</a></li>
+							<li><a href="#">热门品牌</a></li>
+							<li><a href="#">防风外套</a></li>
+							<li><a href="#" class="xiezi-border">下装</a></li>
+							<li><a href="#" class="xiezi-color">休闲裤</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">BEFFON</a></li>
+							<li><a href="#">ERUSROF</a></li>
+							<li><a href="#">速写CROQUIS</a></li>
+							<li><a href="#">Ivyboi</a></li>
+							<li><a href="#">Red Wing</a></li>
+							<li><a href="#">DBRukia</a></li>
+							<li><a href="#">converse</a></li>
+							<li><a href="#">VANS</a></li>
+							<li><a href="#">Timberland</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">PUMA</a></li>
+							<li><a href="#">adidas Originals</a></li>
+							<li><a href="#">中国李宁</a></li>
+							<li><a href="#">Dr.Martens</a></li>
+							<li><a href="#"><img src="images/hover1.JPG" style="width:300px"/></a></li>
+							<li><a href="#">人气鞋靴</a></li>
+						</ul>
+					</div>
+					<div class="bag">
+						<ul>
+							<li><a href="#" class="bag-border">包</a></li>
+							<li><a href="#" class="bag-color">钱包/卡包</a></li>
+							<li><a href="#" class="bag-color">双肩包</a></li>
+							<li><a href="#">手提包/单肩包</a></li>
+							<li><a href="#">邮差包</a></li>
+							<li><a href="#">手包/钥匙包</a></li>
+							<li><a href="#">热门品牌</a></li>
+							<li><a href="#" class="bag-border">COMBACK</a></li>
+							<li><a href="#" class="bag-color">Draconite</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">BABAMA</a></li>
+							<li><a href="#" class="bag-color">初弎</a></li>
+							<li><a href="#" class="bag-color">Cote&Ciel</a></li>
+							<li><a href="#">OMTO</a></li>
+							<li><a href="#">DC</a></li>
+							<li><a href="#">F5S</a></li>
+							<li><a href="#">PINKORANGE</a></li>
+							<li><a href="#">Original X Youth</a></li>
+							<li><a href="#">DUSTY</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">the MAD HATcher</a></li>
+							<li><a href="#">oammi</a></li>
+							<li><a href="#"><img src="images/hover2.JPG" style="width:300px"/></a></li>
+							<li><a href="#">出街必备包袋集合</a></li>
+						</ul>
+					</div>
+					<div class="peishi">
+						<ul>
+							<li><a href="#" class="peishi-border">服配</a></li>
+							<li><a href="#">太阳镜/眼镜</a></li>
+							<li><a href="#" class="peishi-color">帽子</a></li>
+							<li><a href="#">手表</a></li>
+							<li><a href="#">配饰</a></li>
+							<li><a href="#" class="peishi-border">首饰</a></li>
+							<li><a href="#" class="peishi-color">戒指</a></li>
+							<li><a href="#" class="bag-border">耳钉</a></li>
+							<li><a href="#" class="bag-color">手链</a></li>
+						</ul>
+						<ul>
+							<li><a href="#" class="peishi-border">热门品牌</a></li>
+							<li><a href="#" class="peishi-color">MYFUN</a></li>
+							<li><a href="#">oasso</a></li>
+							<li><a href="#">CHUMS</a></li>
+							<li><a href="#" class="peishi-color">OMTO</a></li>
+							<li><a href="#" class="bag-color">鬼洗</a></li>
+							<li><a href="#">JONAS&VERUS唯路时</a></li>
+							<li><a href="#">焕懋手表集合店</a></li>
+							<li><a href="#">CATSON STORE</a></li>
+						</ul>
+						<ul>
+							<li><a href="#" class="peishi-color">PINKORANGE</a></li>
+							<li><a href="#">黑头BLACKHEAD</a></li>
+							<li><a href="#">RASTACLAT</a></li>
+							<li><a href="#">SOLO</a></li>
+							<li><a href="#">DISSOLVE</a></li>
+							<li><a href="#">STANCE</a></li>
+							<li><a href="#"><img src="images/hover3.JPG" style="width:300px"/></a></li>
+							<li><a href="#">热门小物优选</a></li>
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+		<div class="banner layout"><img src="images-list/banner-bg7.jpg"/></div>
+		<div class="goods layout">
+			<h2>全部商品</h2>
+			<fieldset>
+				<legend>共10000个结果</legend>
+			</fieldset>
+			<ul class="listLeft">
+				<li>全部分类</li>
+				<li class="iconfont">&#xe60e;上衣
+					<ul>
+						<li><a href="#">全部上衣</a></li>
+						<li><a href="#">大衣/风衣</a></li>
+						<li><a href="#">毛衣/针织</a></li>
+						<li><a href="#">马甲</a></li>
+						<li><a href="#">T恤</a></li>
+						<li><a href="#">卫衣</a></li>
+						<li><a href="#">衬衫</a></li>
+						<li><a href="#">夹克</a></li>
+						<li><a href="#">POLO衫</a></li>
+						<li><a href="#">背心</a></li>
+						<li><a href="#">防风外套</a></li>
+						<li><a href="#">风衣</a></li>
+						<li><a href="#">套装</a></li>
+						<li><a href="#">皮衣</a></li>
+						<li><a href="#">西装</a></li>
+						<li><a href="#">针织衫</a></li>
+						<li><a href="#">毛衣</a></li>
+						<li><a href="#">大衣</a></li>
+						<li><a href="#">棉衣</a></li>
+						<li><a href="#">羽绒服</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;裤装
+					<ul>
+						<li><a href="#">全部裤装</a></li>
+						<li><a href="#">打底裤</a></li>
+						<li><a href="#">休闲裤</a></li>
+						<li><a href="#">牛仔裤</a></li>
+						<li><a href="#">运动裤</a></li>
+						<li><a href="#">紧身裤/打底裤</a></li>
+						<li><a href="#">西裤</a></li>
+						<li><a href="#">短裤</a></li>
+						<li><a href="#">连体裤</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;包类				
+					<ul>
+						<li><a href="#">全部包类</a></li>
+						<li><a href="#">手包/钥匙包</a></li>
+						<li><a href="#">双肩包</a></li>
+						<li><a href="#">单肩包/手拎包</a></li>
+						<li><a href="#">钱包/卡包</a></li>
+						<li><a href="#">腰包</a></li>
+						<li><a href="#">邮差包</a></li>
+						<li><a href="#">电脑包</a></li>
+						<li><a href="#">储物包</a></li>
+						<li><a href="#">环保包</a></li>
+						<li><a href="#">包配</a></li>
+						<li><a href="#">tote包</a></li>
+						<li><a href="#">旅行包</a></li>
+						<li><a href="#">旅行箱</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;数码3C
+					<ul>
+						<li><a href="#">全部数码3C</a></li>
+						<li><a href="#">影音娱乐</a></li>
+						<li><a href="#">智能设备</a></li>
+						<li><a href="#">电脑配件</a></li>
+						<li><a href="#">手机配件</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;美妆/个护
+					<ul>
+						<li><a href="#">全部美妆/个护</a></li>
+						<li><a href="#">美容小家电</a></li>
+						<li><a href="#">面部护理</a></li>
+						<li><a href="#">身体护理</a></li>
+						<li><a href="#">面部护肤</a></li>
+						<li><a href="#">香水彩妆</a></li>
+						<li><a href="#">口腔护理</a></li>
+						<li><a href="#">洗发护发</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;鞋靴
+					<ul>
+						<li><a href="#">全部鞋靴</a></li>
+						<li><a href="#">休闲/运动鞋</a></li>
+						<li><a href="#">雪地靴</a></li>
+						<li><a href="#">凉鞋/凉拖</a></li>
+						<li><a href="#">时装鞋</a></li>
+						<li><a href="#">靴子</a></li>
+						<li><a href="#">保养护理</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;裙装
+					<ul>
+						<li><a href="#">全部裙装</a></li>
+						<li><a href="#">半身裙</a></li>
+						<li><a href="#">连衣裙</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;服饰
+					<ul>
+						<li><a href="#">全部服配</a></li>
+						<li><a href="#">帽子</a></li>
+						<li><a href="#">太阳镜/眼镜</a></li>
+						<li><a href="#">首饰</a></li>
+						<li><a href="#">手表</a></li>
+						<li><a href="#">配饰</a></li>
+						<li><a href="#">手套</a></li>
+						<li><a href="#">皮带</a></li>
+						<li><a href="#">围巾/丝巾/披肩</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;内衣/家居服
+					<ul>
+						<li><a href="#">全部内衣/家居服</a></li>
+						<li><a href="#">文胸</a></li>
+						<li><a href="#">内裤</a></li>
+						<li><a href="#">家居服</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;居家
+					<ul>
+						<li><a href="#">全部居家</a></li>
+						<li><a href="#">清洁用品</a></li>
+						<li><a href="#">家纺</a></li>
+						<li><a href="#">生活日用</a></li>
+						<li><a href="#">家装软饰</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;居家生活
+					<ul>
+						<li><a href="#">全部居家生活</a></li>
+						<li><a href="#">家装软饰</a></li>
+						<li><a href="#">生活用品</a></li>
+						<li><a href="#">家纺</a></li>
+						<li><a href="#">清洁用品</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;玩具礼品
+					<ul>
+						<li><a href="#">全部玩具礼品</a></li>
+						<li><a href="#">玩具模型</a></li>
+						<li><a href="#">益智/DIY</a></li>
+						<li><a href="#">火机烟具</a></li>
+						<li><a href="#">礼品</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;厨具餐具
+					<ul>
+						<li><a href="#">全部厨具餐具</a></li>
+						<li><a href="#">刀剪菜板</a></li>
+						<li><a href="#">餐具</a></li>
+						<li><a href="#">厨房配件</a></li>
+						<li><a href="#">茶具/咖啡具</a></li>
+						<li><a href="#">水具酒具</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;生活电器
+					<ul>
+						<li><a href="#">全部生活电器</a></li>
+						<li><a href="#">个护健康</a></li>
+						<li><a href="#">家用电器</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;文具杂志
+					<ul>
+						<li><a href="#">全部文具杂志</a></li>
+						<li><a href="#">本册/便签</a></li>
+						<li><a href="#">图书/杂志</a></li>
+						<li><a href="#">学生文具</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;成人用品
+					<ul>
+						<li><a href="#">全部成人用品</a></li>
+						<li><a href="#">成人用品</a></li>
+					</ul>
+				</li>
+				<li class="iconfont">&#xe60e;运动装备
+					<ul>
+						<li><a href="#">全部运动装备</a></li>
+						<li><a href="#">户外装备</a></li>
+						<li><a href="#">体育用品</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="listRight">
+				<ul>
+					<li>
+						<span>已选条件:</span>
+						<a href="">BOYS <sup>x</sup></a>
+					</li>
+					<li>
+						<span>性别:</span>
+						<a href="">BOYS</a>
+						<a href="">GIRLS</a>
+					</li>
+					<li>
+						<span>品牌:</span>
+						<a href="">HIPANDA</a>
+						<a href="">inmix</a>
+						<a href="">PINKORANGE</a>
+						<a href="">MYFUN</a>
+						<a href="">SLOW</a>
+						<a href="">ABLE</a>
+						<a href="">JEANS</a>
+						<a href="">VERNON</a>
+						<a href="">SABIN</a>
+						<a href="">BSN</a>
+						<a href="">AliyaStore</a>
+						<a href="">秋壳</a>
+					</li>
+					<li>
+						<span>人群:</span>
+						<a href="">成人</a>
+						<a href="">大童11-15岁</a>
+						<a href="">中童7-10岁</a>
+						<a href="">小童2-6岁</a>
+						<a href="">婴童0-12个月</a>
+					</li>
+					<li>
+						<span>价格:</span>
+						<a href="">￥0-219</a>
+						<a href="">￥220-399</a>
+						<a href="">￥400-979</a>
+						<a href="">￥979以上</a>
+						<a href="">￥<input type="text" />
+							- <input type="text"/>
+						</a>
+					</li>
+					<li>
+						<span>颜色:</span>
+						<p><a href="#" style="background: #f00;"></a><span>红色</span></p>
+						<p><a href="#" style="background: orange;"></a><span>橙色</span></p>
+						<p><a href="#" style="background: silver;"></a><span>银色</span></p>
+						<p><a href="#" style="background: gold;"></a><span>金色</span></p>
+						<p><a href="#" style="background: #533F03;"></a><span>深绿</span></p>
+						<p><a href="#" style="background: white;"></a><span>白色</span></p>
+						<p><a href="#" style="background: black;"></a><span>黑色</span></p>
+						<p><a href="#" style="background: grey;"></a><span>灰色</span></p>
+						<p><a href="#" style="background: brown;"></a><span>棕色</span></p>
+						<p><a href="#" style="background: green;"></a><span>绿色</span></p>
+						<p><a href="#" style="background: blue;"></a><span>蓝色</span></p>
+						<p><a href="#" style="background: purple;"></a><span>紫色</span></p>
+						<p><a href="#" style="background: yellow;"></a><span>黄色</span></p>
+					</li>
+					<li>
+						<span>高级选项:</span>
+						<a href="">分格<span class="iconfont">&#xe60c;</span></a>
+						<a href="">厚度<span class="iconfont">&#xe60c;</span></a>
+						<a href="">袖长<span class="iconfont">&#xe60c;</span></a>
+						<a href="">领型<span class="iconfont">&#xe60c;</span></a>
+						<a href="">衣长<span class="iconfont">&#xe60c;</span></a>
+					</li>
+					<li>
+						<span>默认:</span>
+						<a href="">人气<span class="iconfont">&#xe60c;</span></a>
+						<a href="">新品<span class="iconfont">&#xe60d;&#xe60c;</span></a>
+						<a href="">价格<span class="iconfont">&#xe60d;&#xe60c;</span></a>
+						<a href="">折扣<span class="iconfont">&#xe60d;&#xe60c;</span></a>
+						<select>
+							<option>100</option>
+							<option>40</option>
+							<option>100</option>
+							<option>200</option>每页
+						</select>
+						<a href="#">&lt;</a>1/56<a href="#">&gt;</a>
+					</li>
+				</ul>
+			</div>
+			<div class="dire"></div>
+		</div>
+		<div class="pagination layout"></div>
+		<div class="goods-cont layout">
+			<ul class="cont"></ul>
+		</div>
+		<div class="footer" style="height:325px;">
+			<div class="layout">
+				<div class="top">
+					<p><img src="images/yoho_460.jpg"/><span>100%</span> 品牌正品</p>
+					<p><img src="images/yoho_463.jpg"/><span>7天</span> 无理由退换货</p>
+					<p><img src="images/yoho_466.jpg"/><span>便捷</span> 在线客服</p>
+					<button>订阅我们的邮件<a href="#"><img src="images/yoho_469.jpg"/></a></button>
+				</div>
+				<div class="middle">
+					<ul>
+						<li><a href="#">注册登录</a></li>
+						<li><a href="#">新手专区</a></li>
+						<li><a href="#">购物结算</a></li>
+						<li><a href="#">下单支付</a></li>
+						<li><a href="#">收货评价</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">会员中心</a></li>
+						<li><a href="#">会员制度</a></li>
+						<li><a href="#">会员优惠</a></li>
+						<li><a href="#">账户管理</a></li>
+						<li><a href="#">密码管理</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">购物指南</a></li>
+						<li><a href="#">发票</a></li>
+						<li><a href="#">尺码对照</a></li>
+						<li><a href="#">尺码解读</a></li>
+						<li><a href="#">商品咨询</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">支付方式</a></li>
+						<li><a href="#">在线支付</a></li>
+						<li><a href="#">货到付款</a></li>
+						<li><a href="#">分期支付</a></li>
+						<li><a href="#">优惠券、有货币</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">配送方式</a></li>
+						<li><a href="#">配送说明</a></li>
+						<li><a href="#">验货签收</a></li>
+						<li><a href="#">运费说明</a></li>
+						<li><a href="#">收货样品</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">售后服务</a></li>
+						<li><a href="#">退换货政策</a></li>
+						<li><a href="#">退换货流程</a></li>
+						<li><a href="#">投诉与建议</a></li>
+						<li><a href="#">在线客服</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">APP常见问题</a></li>
+						<li><a href="#">IPhone版</a></li>
+						<li><a href="#">Android版</a></li>
+						<li><a href="#">wap版</a></li>
+						<li><a href="#">IPAD版</a></li>
+					</ul>
+					<div>
+						<p>
+							<a href="#"><img src="images/yoho_478.jpg"></a>
+							<a href="#"><img src="images/yoho_480.jpg"></a>
+							<a href="#"><img src="images/yoho_482.jpg"></a>
+						</p>
+						<ul>
+							<li><a href="#">返回首页</a></li>
+							<li><a href="#">YOHO!BUY 有货</a></li>
+							<li><a href="#">新力传媒</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">商家入驻 </a></li>
+							<li><a href="#">隐私条款 </a></li>
+							<li><a href="#">友情链接 </a></li>
+							<li><a href="#">潮流品牌大全 </a></li>
+							<li><a href="#">潮流品类大全</a></li>
+							<li><a href="#">潮流产品大全</a></li>
+							<li><a href="#">潮流资讯</a></li>
+							<li><a href="#">穿衣搭配(男生版)</a></li>
+							<li><a href="#">穿衣搭配(女生版)</a></li>
+							<li><a href="#">潮流人气</a></li>
+							<li><a href="#">潮流潮品</a></li>
+							<li><a href="#">潮流视频</a></li>
+							<li><a href="#"><img src="images/yoho_485.jpg"/>苏公网安备 32010502010132号</a></li>
+						</ul>
+					</div>
+					<p style="border-bottom: none;"><span>CopyRight © 2007-2018 南京新与力文化传播有限公司 苏ICP备09011225号 NewPower Co. 版权所有 经营许可证编号：苏B2-20120395</span></p>
+				</div>
+				<p><img src="images/bg_03.jpg"/></p>
+				<a href="#"><img src="images/top_03.jpg"/></a>
+			</div>
+		</div>
+	</body>
+	<script src="js/intro.js"></script>
+	<script src="js/list.js"></script>
+	<script src="js/item.js"></script>
+	<script src="js/jquery.pagination.js"></script>
+	<script>
+		$(function(){
+	
+			$(".pagination").pagination(112,{
+				items_per_page:2,
+				num_display_entries:3,
+				current_page:2,
+				num_edge_entries:5,
+				prev_text:"上一页",
+				next_text:"下一页",
+				ellipse_text:"......",
+				prev_show_always:false,
+				next_show_always:false,
+				callback:function(index){
+					console.log(index)
+				}
+			})
+	
+		})
+	</script>
+	
+<!--	<script>
+		class GoodsList{
+			constructor(options){
+				this.url = options.url;
+				this.cont = options.cont;
+				
+				this.load()
+			}
+			load(){
+				var that = this
+				$.ajax({
+					url:this.url,
+					success:function(res){
+						that.res = res
+						that.display()
+					}
+				})
+			}
+			display(){
+				var str = ""
+				for(var i=0;i<this.res.length;i++){
+					str += `<div class="box" data-id="${this.res[i].goodsId}">
+								<img src="${this.res[i].src}">
+								<span>${this.res[i].dir}</span>
+								<p>${this.res[i].pri}</p>
+								<em>添加购物车</em>
+							</div>`
+				}
+				this.cont.html(str);
+				this.init()
+			}
+			init(){
+				var that = this;
+				this.cont.on("click","em",function(){
+					that.id = $(this).parent().attr("data-id");
+					that.setCookie()
+				})
+			}
+			setCookie(){
+//				购物车只能使用一条cookie
+				this.goods = JSON.parse($.cookie("goods"));
+//				点击
+				if(this.goods == null){
+//					第一次存:直接存
+					this.goods = [{
+						id:this.id,
+						num:1
+					}]
+				}else{
+//					不是第一次:要判断之前的商品是否跟这次点的一致
+					var onOff = true;
+//					遍历之前所有商品,跟这次的商品比较,如果相同,那么就增加数量
+					for(var i=0;i<this.goods.length;i++){
+						if(this.goods[i].id == this.id){
+//							之前存了A,这次又点了A
+							this.goods[i].num++;
+//							改变开关状态
+							onOff = false
+						}
+					}
+//					如果遍历完所有对象,开关没有被改变,说明没有找到重复商品,那么就需要添加新商品
+					if(onOff == true){
+//						之前存了B,这次点了A
+						this.goods.push({
+							id:this.id,
+							num:1
+						})
+					}
+				}
+				
+//				console.log(this.goods)
+
+//				cookie只能存字符
+				$.cookie("goods",JSON.stringify(this.goods))
+//				document.cookie = "goods=" + JSON.stringify([{a:10,b:20}]);
+			}
+		}
+		
+		
+		new GoodsList({
+			url:"http://localhost/myProject/data/goods.json",
+			cont:$(".dir")
+		})
+		
+		
+		
+		
+		
+//		<div class="box" data-id="${this.res[i].goodsId}">
+//								<img src="${this.res[i].src}">
+//								<span>${this.res[i].price}</span>
+//								<p>${this.res[i].name}</p>
+//								<em>添加购物车</em>
+//							</div>
+	</script>-->
+</html>

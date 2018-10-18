@@ -1,0 +1,16 @@
+.header .right li:nth-child(5){position: absolute;top:30px;left:173px;}
+.header .right li:nth-child(6){position: absolute;top:30px;left:340px;}
+.car{margin-top:40px;}
+.order-title{height:42px;margin-bottom:40px;}
+.order-title p,.order-title .shoping-step{height:42px;}
+.order-title p{width:150px;float:left;line-height:42px;}
+.order-title p img{float:left;margin:8px 5px 0 0;}
+.order-title .shoping-step{width:440px;float:right;display:flex;}
+.order-title .shoping-step li{flex:1;line-height:42px;}
+.shop-wrapper{margin-bottom:20px;}
+.shop-title{display: flex;height:50px;}
+.shop-title p{flex:1;background:#000;color:#fff;height:50px;line-height:50px;text-align:center;}
+.shop-car p{width: 60px;}
+.shop-car h2{margin: 30px 0;text-indent: 30px;}
+.shop-car em{display: block;width: 100px;line-height: 30px;text-align: center;background: deepskyblue;border-radius: 6px;margin: 0 auto;margin-top: 10px;font-style: normal;cursor: pointer;color: #fff;}
+.shop-car input[type="number"]{width:50px}
