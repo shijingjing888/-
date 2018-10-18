@@ -7,8 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="css/list.css"/>
 		<link rel="stylesheet" type="text/css" href="iconfont-login/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="css/pagination.css"/>
-		<script src="js/jquery.js"></script>
-		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div class="intro">
@@ -574,6 +572,8 @@
 			</div>
 		</div>
 	</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/intro.js"></script>
 	<script src="js/list.js"></script>
 	<script src="js/item.js"></script>
@@ -599,7 +599,7 @@
 		})
 	</script>
 	
-<!--	<script>
+	<script>
 		class GoodsList{
 			constructor(options){
 				this.url = options.url;
@@ -612,7 +612,8 @@
 				$.ajax({
 					url:this.url,
 					success:function(res){
-						that.res = res
+						that.res = res;
+						console.log(that.res)
 						that.display()
 					}
 				})
@@ -624,7 +625,7 @@
 								<img src="${this.res[i].src}">
 								<span>${this.res[i].dir}</span>
 								<p>${this.res[i].pri}</p>
-								<em>添加购物车</em>
+								<a href="cars.html"><em>添加购物车</em></a>
 							</div>`
 				}
 				this.cont.html(str);
@@ -680,7 +681,7 @@
 		
 		new GoodsList({
 			url:"http://localhost/myProject/data/goods.json",
-			cont:$(".dir")
+			cont:$(".dire")
 		})
 		
 		
@@ -693,5 +694,5 @@
 //								<p>${this.res[i].name}</p>
 //								<em>添加购物车</em>
 //							</div>
-	</script>-->
+	</script>
 </html>

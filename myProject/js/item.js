@@ -24,21 +24,21 @@ $.ajax({
 			}
 	});
 	
-$.ajax({
-			url:"http://localhost/myProject/data/goods.json",
-			success:function(res){
-				var str="";
-				for(var i=0;i<res.length;i++){
-					str+=`<div class="box" data-id="${res[i].goodsId}">
-						<img src="${res[i].src}">
-						<p>${res[i].dir}</p>
-						<span>${res[i].pri}</span>
-						<a href="cars.html"><em>添加购物车</em></a>
-					</div>`;
-				}
-				$(".dire").html(str);
-			}
-	});
+//$.ajax({
+//			url:"http://localhost/myProject/data/goods.json",
+//			success:function(res){
+//				var str="";
+//				for(var i=0;i<res.length;i++){
+//					str+=`<div class="box" data-id="${res[i].goodsId}">
+//						<img src="${res[i].src}">
+//						<p>${res[i].dir}</p>
+//						<span>${res[i].pri}</span>
+//						<a href="cars.html"><em>添加购物车</em></a>
+//					</div>`;
+//				}
+//				$(".dire").html(str);
+//			}
+//	});
 	
 $.ajax({
 			url:"http://localhost/myProject/data/goods-cont.json",
