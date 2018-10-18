@@ -6,7 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 		<link rel="stylesheet" type="text/css" href="iconfont-login/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="css/cars.css"/>
-		<script src="js/jquery.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -75,17 +74,17 @@
 			</table>
 		</div>
 	</body>
+	<script src="js/jquery.js"></script>
 	<script src="js/login.js"></script>
-	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
-		
 		class Cart{
 			constructor(options){
 				this.url = options.url;
 				this.body = options.tbody;
 				
-				this.load()
+				this.load();
+				console.log(11)
 			}
 			load(){
 				var that = this;
@@ -109,8 +108,8 @@
 							str += `<tr>
 										<td><input type="checkbox"></td>
 										<td><img src="${this.res[i].src}"/></td>
-										<td>${this.res[i].name}</td>
-										<td>${this.res[i].price}</td>
+										<td>${this.res[i].dir}</td>
+										<td>${this.res[i].pri}</td>
 										<td>${this.goods[j].num}</td>
 										<td><em data-index="${this.res[i].goodsId}">删除</em></td>
 									</tr>`
@@ -147,4 +146,5 @@
 			url:"http://localhost/myProject/data/goods.json",
 			tbody:$("tbody")
 		})
+	</script>
 </html>

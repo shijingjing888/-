@@ -28,7 +28,7 @@ $.ajax({
 			url:"http://localhost/myProject/data/goods.json",
 			success:function(res){
 				var str="";
-				for(var i=1;i<res.length;i++){
+				for(var i=0;i<res.length;i++){
 					str+=`<div class="box" data-id="${res[i].goodsId}">
 						<img src="${res[i].src}">
 						<p>${res[i].dir}</p>
