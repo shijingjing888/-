@@ -29,10 +29,10 @@ $.ajax({
 			success:function(res){
 				var str="";
 				for(var i=1;i<res.length;i++){
-					str+=`<div class="box" data-id="${this.res[i].goodsId}">
-						<img src="${this.res[i].src}">
-						<p>${this.res[i].dir}</p>
-						<span>${this.res[i].pri}</span>
+					str+=`<div class="box" data-id="${res[i].goodsId}">
+						<img src="${res[i].src}">
+						<p>${res[i].dir}</p>
+						<span>${res[i].pri}</span>
 						<em>添加购物车</em>
 					</div>`;
 				}
