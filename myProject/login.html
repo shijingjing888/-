@@ -48,16 +48,16 @@
 						<h2><span>会员登录</span><a href="#">中国 +86</a></h2>
 						<button>普通登录</button><button>手机验证码登录</button>
 						<div class="user">
-							<input type="text" class="required" maxlength="11" minlength="11" name="user" placeholder="邮箱/手机号码" /><br />
-							<input type="password" class="required number" maxlength="16" minlength="8" placeholder="密码" />
+							<input type="text" class="user" placeholder="邮箱/手机号码" /><br />
+							<input type="password" class="pass" placeholder="密码" />
 						</div>
 						<div class="phone">
-							<input type="text" placeholder="手机号码" class="required" maxlength="11" minlength="11"/><br />
-							<input type="text"  class="required" minlength="4" maxlength="4"/>
+							<input type="text" class="user" placeholder="手机号码" /><br />
+							<input type="text" class="pass"/>
 							<input type="text" placeholder="获取短信验证码"/>
 						</div>
 						<div class="submit">
-							<input type="submit" value="登  录" />
+							<input type="submit" value="登  录" / id="login">
 							<div><a href="#">记录登录状态<input type="checkbox" /></a>
 							<ul>
 								<li><a href="#">忘记密码？|</a></li>
@@ -172,4 +172,30 @@
 	<script>
 			$("form").validate();
 	</script>
+	<script type="text/javascript">
+			$("#login").click(function(){
+				$.ajax({
+					url:"http://www.liyangyf.com/ctrl/login.php",
+					data:{
+						user:$(".user").val(),
+						pass:$(".pass").val()
+					},
+					success:function(res){
+						switch(res){
+							case '0':
+							alert("用户名密码不符合");
+								break;
+							case '1':
+							alert("用户名密码不能为空，请重新输入")
+								location.href="login.html";
+								break;
+							default:
+							alert("登录成功，拿到数据，可以跳转会员中心了");						}
+							res=JSON.parse(res);
+							console.log(res);
+								location.href="http://localhost/myProject/index.html";
+					}
+				});
+			});
+		</script>
 </html>

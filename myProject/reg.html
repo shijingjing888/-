@@ -43,11 +43,11 @@
 							<option>美国</option>
 						</select>
 						<br />
-						<input type="text" value="+86"/>
-						<input type="text" class="required" maxlength="11" minlength="11" placeholder="请输入手机号码"  /><br />
-						<input type="text" class="required" maxlength="4" minlength="4" placeholder="短信验证码"/>
+						<input type="text"value="+86"/>
+						<input type="text" id="tel" placeholder="请输入手机号码" /><!--class="required" maxlength="11" minlength="11"-->  <br />
+						<input type="text" id="name" placeholder="短信验证码" /><!--class="required" maxlength="4" minlength="4"-->
 						<input type="text" placeholder="获取短信验证码"/><br />
-						<input type="text" class="required" maxlength="16" minlength="6" placeholder="设置密码"/>
+						<input type="text"  id="pass"placeholder="设置密码"/><!--class="required" maxlength="16" minlength="6"-->
 						<p>
 							<span>高</span>
 							<span>中</span>
@@ -57,7 +57,7 @@
 						<p><input type="checkbox" />
 						<span>我已阅读并同意遵守<a href="#"> YOHO!BUY 有货服务条款</a></span>
 						</span></p>
-						<button>立 &nbsp;&nbsp;即 &nbsp;&nbsp;注 &nbsp;&nbsp;册</button>
+						<button id="reg">立 &nbsp;&nbsp;即 &nbsp;&nbsp;注 &nbsp;&nbsp;册</button>
 						<p>我已注册YOHO!BUY 有货账号<a href="login.html"> 快速登录</a></p>
 					</div>
 				</form>
@@ -153,10 +153,39 @@
 				<a href="#"><img src="images/top_03.jpg"/></a>
 			</div>
 		</div>
-		<script src="js/jquery.validate.js"></script>
-		<script src="js/jquery.validate.messages_zh.js"></script>
-		<script>
+		<!--<script src="js/jquery.validate.js"></script>
+		<script src="js/jquery.validate.messages_zh.js"></script>-->
+		<!--<script>
 			$("form").validate();
-		</script>
+		</script>-->
 	</body>	
+	<script>
+		$("#reg").click(function(){
+				$.ajax({
+					url:"http://www.liyangyf.com/ctrl/register.php",
+					data:{
+						tel:$("#tel").val(),
+						pass:$("#pass").val(),
+						name:$("#name").val()
+					},
+					/*beforeSend:function(){
+						$("span").html("<img src='images/timg.gif'>");
+					},*/
+					success:function(res){
+						switch(res){
+							case '0':
+								alert("已被注册");
+								break;
+							case '1':
+								alert("注册成功");
+									location.href="http://localhost/myProject/login.html";
+								break;
+							case '2':
+								alert("数据不全");
+								break;
+						}
+					}
+				});
+			})
+	</script>
 </html>

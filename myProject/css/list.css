@@ -36,8 +36,7 @@
 .dire .box:nth-of-type(4n){margin-right:0;}
 .dire .box img{width:235px;margin-bottom:20px;}
 .dire .box p,.dire li span{font-size:13px;color:#000;margin-bottom:10px;}
-.dire .box a{display:block;margin-top:10px;}
-.dire .box em{float:right;width:100px;height:30px;color:#fff;border-radius:10px;line-height:30px;text-align:center;background:#007BFF;}
+.dire .box em{float:right;width:100px;height:30px;color:#fff;border-radius:10px;line-height:30px;text-align:center;background:#007BFF;cursor:pointer;}
 /*.dire .box a{margin-bottom:10px;position:relative;color:#666;}*/
 .dire .box img:nth-of-type(2){position:absolute;top:-50px;left:-10px;display:none;width:280px;}
 .pagination{margin-bottom:50px;float: right;margin-right:100px;text-align: right;}

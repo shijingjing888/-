@@ -1,6 +1,6 @@
-.detailbox{position:relative;}
-.detailbox>p{margin-bottom: 10px;}
-.detailbox>p>a{color:#666;font-size:13px;}
+.detail-box{position:relative;}
+.detail-box>p{margin-bottom: 10px;}
+.detail-box>p>a{color:#666;font-size:13px;}
 .detail-img{position:relative;width:500px;}
 .detail-img>div{width:400px;height:533px;overflow:hidden;}
 .detail-img>div img{width:400px;}
@@ -12,7 +12,10 @@
 .detail-img .orig{border:none;}
 .detail-img .fd{left:510px;top:0;overflow: hidden;display: none;}
 .detail-img .blocks{ width:160px;height:160px;background:rgba(254,238,167,.4);position: absolute;left: 0;top:0;display: none;}
-.detail-tell{position:absolute;left:550px;top:30px;width:600px;}
+.detail-img .imglist{width:500px;height:100px;}
+.detail-img .imglist li{margin:10px 10px 0 0;width:80px;height:100px;float:left;}
+.detail-img .imglist img{width:80px;height:100px;}
+.detail-tell{position:absolute;left:550px;top:200px;width:600px;}
 .detail-tell h3{height:50px;border-bottom:1px solid #ccc;}
 .detail-tell p{height:40px;line-height:40px;margin-bottom:10px;font-size:13px;}
 .detail-tell p:first-child span{font-size:20px;}

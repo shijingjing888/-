@@ -68,3 +68,4 @@ $(".dire").on("mouseleave","li",function(){
 	$(".dire").find("li").eq($(this).index()).find("img").eq(0).css({display:"block"})
 	$(".dire").find("li").eq($(this).index()).find("img").eq(1).css({display:"none"})
 })
+

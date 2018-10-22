@@ -1,7 +1,7 @@
 class Page{
 	constructor(){
 		this.num = 20;
-		this.url = "http://localhost/myproject/data/alllist.json";
+		this.url = "http://localhost/myproject/data/goods.json";
 		this.index = 0;
 		this.load();
 		this.init();
@@ -33,7 +33,7 @@ class Page{
 					</li>`
 			}
 		}
-		$(".alllist").html(str);
+		$(".detail-img").html(str);
 		this.storeCookie()
 		
 	}

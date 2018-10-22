@@ -35,3 +35,4 @@ $(".denglu").find("button").eq(0).on("click",function(){
 	$(".denglu").find("button").eq(0).css({background:"#000",color:"#fff"})
 	$(".denglu").find("button").eq(1).css({background:"#ccc",color:"#000"})
 })
+

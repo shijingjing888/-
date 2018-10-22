@@ -1,6 +1,6 @@
 class Detail{
 	constructor(){
-		this.url = "http://localhost/myproject/data/alllist.json";
+		this.url = "http://localhost/myProject/data/goods.json";
 		this.load()
 	}
 	load(){
@@ -22,46 +22,39 @@ class Detail{
 	display(){
 		var str1 = "";
 		var str2 = "";
-		var str3 = "";
-		var str4 = "";
-		var str5 = "";
-		var str6 = "";
-		var str7 = ""
 		for(var i=0;i<this.res.length;i++){
 			for(var j=0;j<this.goods.length;j++){
 				if(this.res[i].goodsId == this.goods[j].id){
 					str1 =`<img src="${this.res[i].src}"/>
 							<span></span>` ;
 							
-					str2 +=`<span class="price-tit">价 &nbsp;&nbsp;&nbsp;&nbsp;格</span>
-							<span class="price-val">${this.res[i].price}</span>
-							<span class="price-tel">销售价</span>`;
-							
-					str3 =`<ul>
+					str2 =`<ul>
 								<li><img src="${this.res[i].detail1}"/></li>
 								<li><img src="${this.res[i].detail2}"/></li>
 								<li><img src="${this.res[i].detail3}"/></li>
 								<li><img src="${this.res[i].detail4}"/></li>
 							</ul>`;
-							
-					str4 = `<img src="${this.res[i].detail1}"/>
-							<img src="${this.res[i].detail2}"/>
-							<img src="${this.res[i].detail3}"/>
-							<img src="${this.res[i].detail4}"/>`
-					
-					str5 = `<img src="${this.res[i].src}"/>`
-					str6 = `<span>${this.res[i].name}</span>`
-					str7 = `<p data-id="${this.res[i].goodsId}" class="keys">${this.res[i].name}</p>`
+					console.log(str1,str2);
+//					str4 = `<img src="${this.res[i].detail1}"/>
+//							<img src="${this.res[i].detail2}"/>
+//							<img src="${this.res[i].detail3}"/>
+//							<img src="${this.res[i].detail4}"/>`
+//					
+//					str5 = `<img src="${this.res[i].src}"/>`
+//					str6 = `<span>${this.res[i].name}</span>`
+//					str7 = `<p data-id="${this.res[i].goodsId}" class="keys">${this.res[i].name}</p>`
 				}
 			}
 		}
 		$(".imgbox").html(str1);
-		$(".bigbox").html(str5);
-		$(".price-det").html(str2);
-		$(".imglist").html(str3);
-		$(".good-sug").html(str4);
-		$(".tell").html(str6);
-		$(".tell-tit").html(str7);
+		console.log($(".imgbox").html(str1));
+//		$(".bigbox").html(str5);
+//		$(".price-det").html(str2);
+		$(".imglist").html(str2);
+		console.log($(".imglist").html(str2));
+//		$(".good-sug").html(str4);
+//		$(".tell").html(str6);
+//		$(".tell-tit").html(str7);
 		this.init();
 		this.keepCookie();
 	}
